@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "normal": "node 2.js",
+        "log-1": "DEBUG='marker' node 1.js",
+        "log-2": "DEBUG='worker:*' node 2.js",
+        "log-3": "DEBUG=worker:a,worker:b,worker:c node 2.js"
+    },
+    "dependencies": {
+        "debug": "4.1.1"
+    }
+}
